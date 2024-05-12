@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+nav .active {
+}
+
+.flip-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front .inner {
+ background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
