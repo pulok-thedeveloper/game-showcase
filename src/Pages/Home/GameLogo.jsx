@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import logo1 from "../../assets/game_logo/logo1.webp";
 import logo2 from "../../assets/game_logo/logo2.webp";
 import logo3 from "../../assets/game_logo/logo3.webp";
@@ -9,35 +10,58 @@ import logo8 from "../../assets/game_logo/logo8.jpeg";
 import logo9 from "../../assets/game_logo/logo9.jpeg";
 
 const GameLogo = () => {
+  const addAnimation = () => {
+    const scrollers = document.querySelectorAll(".scroller");
+    scrollers.forEach((scroller) => {
+      scroller.setAttribute("data-animated", true);
+
+      const scrollerInner = scroller.querySelector(".scroller_inner");
+      const scrollerContent = Array.from(scrollerInner.children);
+
+      scrollerContent.forEach((item) => {
+        const duplicateItem = item.cloneNode(true);
+        duplicateItem.setAttribute("aria-hidden", true);
+        scrollerInner.appendChild(duplicateItem);
+      });
+    });
+  };
+
+  useEffect(() => {
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+  }, []);
   return (
-    <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-9 3xl:grid-cols-9 gap-10">
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo1} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo2} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo3} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo4} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo5} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo6} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo7} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo8} alt="" />
-      </div>
-      <div className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-        <img src={logo9} alt="" />
-      </div>
+    <div className="scroller overflow-hidden">
+      <ul className="scroller_inner relative flex gap-10 ">
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo1} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo2} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo3} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo4} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo5} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo6} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo7} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo8} alt="" />
+        </li>
+        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="max-w-32" src={logo9} alt="" />
+        </li>
+      </ul>
     </div>
   );
 };

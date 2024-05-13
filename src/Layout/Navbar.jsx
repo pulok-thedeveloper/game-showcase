@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="bg-white/10 backdrop-blur-xl px-8 rounded-xl h-20 flex justify-between items-center">
         <div className="logo flex items-center h-full">
           <p className="text-[#EB8F1E] text-2xl josefin-sans font-semibold uppercase">
-            <span className="">Game</span> Showcase
+            Game Showcase
           </p>
         </div>
 
