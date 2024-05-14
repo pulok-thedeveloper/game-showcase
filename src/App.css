@@ -79,3 +79,7 @@ nav .active {
 .flip-card:hover .flip-card-back {
   transform: rotateY(0deg);
 }
+
+.faqItem .details.active {
+  max-height: auto;
+}

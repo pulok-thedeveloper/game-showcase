@@ -28,6 +28,11 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink className="" to="/contact">
+                Contact
+              </NavLink>
+            </li>
+            <li>
               <NavLink className="" to="/blogs">
                 Blogs
               </NavLink>
@@ -35,7 +40,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <button className="bg-[#EB8F1E] text-white px-5 py-2 rounded-md">
+        <button className="bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
           Let&apos;s Talk
         </button>
       </div>

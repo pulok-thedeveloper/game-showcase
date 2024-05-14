@@ -38,7 +38,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game1} />
+              <img className="h-full w-full opacity-20" alt="" src={game1} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />
@@ -64,7 +64,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game2} />
+              <img className="h-full w-full opacity-20" alt="" src={game2} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />
@@ -90,7 +90,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game3} />
+              <img className="h-full w-full opacity-20" alt="" src={game3} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />
@@ -116,7 +116,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game4} />
+              <img className="h-full w-full opacity-20" alt="" src={game4} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />
@@ -142,7 +142,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game5} />
+              <img className="h-full w-full opacity-20" alt="" src={game5} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />
@@ -168,7 +168,7 @@ const FeaturedGames = () => {
               </div>
             </div>
             <div className="flip-card-back p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md border border-white/10">
-              <img className="h-full w-full opacity-0" alt="" src={game6} />
+              <img className="h-full w-full opacity-20" alt="" src={game6} />
               <div className="inner absolute p-3 w-full h-full left-0 top-1/2">
                 <div className="bg-[#1C2137]/30 border border-white/10 backdrop-blur-xl p-2 h-full flex flex-col items-center justify-center gap-3 rounded-xl">
                   <img src={game1Logo} alt="" className="w-1/3 rounded-xl" />

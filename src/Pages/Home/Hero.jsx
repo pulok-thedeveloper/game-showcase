@@ -27,7 +27,9 @@ const Hero = () => {
             art services.
           </p>
           <div>
-            <button>Learn More</button>
+            <button className="bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
+              Learn More
+            </button>
           </div>
         </div>
         <div className="right flex flex-grow justify-end">

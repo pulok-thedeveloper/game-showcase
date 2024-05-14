@@ -7,9 +7,13 @@ const FAQItem = ({ item }) => {
   return (
     <li
       onClick={() => setIsOpen(!isOpen)}
-      className="bg-white/10 cursor-pointer backdrop-blur-xl shadow-md p-5 rounded-lg"
+      className="faqItem bg-white/10 cursor-pointer backdrop-blur-xl shadow-md p-5 rounded-lg transition-all duration-500"
     >
-      <h4 className={`flex justify-between items-center ${isOpen && "mb-3"}`}>
+      <h4
+        className={`flex justify-between items-center ${
+          isOpen ? "mb-3" : "mb-0"
+        }`}
+      >
         <span>{item.question}</span>
         {isOpen ? (
           <FaCircleMinus className="text-[#EB8F1E] text-xl" />
@@ -18,8 +22,8 @@ const FAQItem = ({ item }) => {
         )}
       </h4>
       <p
-        className={`px-5 text-sm font-light leading-loose overflow-hidden transition-all duration-500 ${
-          isOpen ? "max-h-auto" : "max-h-0"
+        className={`details px-5 text-sm font-light transition-all duration-300 overflow-hidden ${
+          isOpen ? "leading-loose opacity-1" : "leading-[0] opacity-0"
         }`}
       >
         {item.answer}

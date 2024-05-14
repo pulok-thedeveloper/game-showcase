@@ -6,6 +6,7 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import payment from "../assets/payment.png";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="logo text-3xl text-[#EB8F1E] font-semibold uppercase mb-5">
             Game Showcase
           </div>
-          <p className="font-light text-xs leading-loose">
+          <p className="font-light text-xs leading-loose mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             tempus finibus nulla a tempus. Proin laoreet ut tellus a finibus.
             Cras tempor nulla vel dignissim posuere. Proin bibendum, dolor eu
@@ -23,6 +24,7 @@ const Footer = () => {
             risus vel augue. Donec massa odio, vestibulum quis sem eu, aliquam
             vestibulum lorem.
           </p>
+          <img src={payment} />
         </div>
         <div className="justify-self-center">
           <h4 className="mb-3">Our Games</h4>

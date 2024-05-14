@@ -10,7 +10,8 @@ const Faq = () => {
   });
 
   return (
-    <div className="bg-[#110C1D] px-36 pt-40 pb-20 text-white ">
+    <div className="bg-[#110C1D] px-36 pt-40 pb-20 text-white relative">
+      <div className="absolute top-0 left-0 w-0 z-20 h-0 border-r-[99vw] border-r-transparent border-b-[5vw] border-b-[#110C1D] -mt-[5vw]"></div>
       <div className="title mb-10 text-center">
         <h3 className="text-lg italic font-light mb-2">Do You Have</h3>
         <h2 className="permanent-marker-regular text-6xl">
