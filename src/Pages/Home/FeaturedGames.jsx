@@ -19,7 +19,7 @@ const FeaturedGames = () => {
       <GameLogo></GameLogo>
 
       <section className="featured-games relative text-white">
-        <div className="title mt-20 mb-8 text-center permanent-marker-regular text-5xl">
+        <div className="title mt-20 mb-8 text-center permanent-marker-regular text-6xl">
           <span className="text-[#EB8F1E]"> Featured</span> <span>Games</span>
         </div>
         <p className="text-center md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto leading-loose font-light">
