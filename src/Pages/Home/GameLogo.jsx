@@ -33,33 +33,33 @@ const GameLogo = () => {
   }, []);
   return (
     <div className="scroller overflow-hidden">
-      <ul className="scroller_inner relative flex gap-10 ">
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo1} alt="" />
+      <ul className="scroller_inner relative flex sm:gap-10 gap-5">
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo1} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo2} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo2} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo3} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo3} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo4} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo4} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo5} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo5} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo6} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo6} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo7} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo7} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo8} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo8} alt="" />
         </li>
-        <li className="p-4 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
-          <img className="max-w-32" src={logo9} alt="" />
+        <li className="sm:p-4 p-2 rounded-3xl bg-white/10 backdrop-blur-xl shadow-md">
+          <img className="sm:max-w-32 max-w-24" src={logo9} alt="" />
         </li>
       </ul>
     </div>

@@ -5,7 +5,7 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 const Contact = () => {
   return (
     <div
-      className="min-h-[100vh] relative px-36 py-40"
+      className="min-h-[100vh] relative px-16 sm:px-24 xl:px-36 py-40"
       style={{
         background: "radial-gradient(#A05D86, 30%, #10092C)",
         // background: "radial-gradient(#27174F, 30%, #10092C)",
@@ -13,7 +13,7 @@ const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-full h-full z-10 bg-white/10 backdrop-blur-2xl"></div>
 
-      <div className="grid grid-cols-2 items-center gap-20 text-white relative z-20">
+      <div className="grid md:grid-cols-2 items-center gap-20 text-white relative z-20">
         <div>
           <div className=" mb-12">
             <div className="title mb-8">
@@ -90,7 +90,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="flex flex-col items-end gap-10 text-right">
+        <div className="grid grid-cols-2 sm:flex sm:flex-row md:flex-col md:items-end justify-between gap-10 md:text-right">
           <div>
             <h3 className="uppercase mb-4 text-lg">Address</h3>
             <div className="leading-loose font-light">

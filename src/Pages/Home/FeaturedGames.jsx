@@ -10,7 +10,7 @@ import game1Logo from "../../assets/game_logo/logo1.webp";
 const FeaturedGames = () => {
   return (
     <div
-      className="px-36 py-20 pb-40 min-h-[100vh]"
+      className="px-16 sm:px-24 xl:px-36 py-20 pb-40 min-h-[100vh]"
       style={{
         background:
           "linear-gradient(250.59deg, #322c38 0%, #514e61 28.53%, #1c2137 75.52%)",
@@ -22,14 +22,14 @@ const FeaturedGames = () => {
         <div className="title mt-20 mb-8 text-center permanent-marker-regular text-5xl">
           <span className="text-[#EB8F1E]"> Featured</span> <span>Games</span>
         </div>
-        <p className="text-center w-2/5 mx-auto leading-loose font-light">
+        <p className="text-center md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto leading-loose font-light">
           We offer a full range of video game art and development services for
           creating entertainment projects based on our expertise gained in 50+
           accomplished projects for partners, as well as in publishing our own
           titles.
         </p>
 
-        <div className="cards mt-16 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-10">
+        <div className="cards mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 sm:gap-10 gap-5">
           <div className="flip-card relative cursor-pointer">
             <div className="flip-card-front p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md">
               <img className="h-full w-full rounded-xl" alt="" src={game1} />

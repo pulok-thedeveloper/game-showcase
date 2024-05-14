@@ -10,23 +10,21 @@ import payment from "../assets/payment.png";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#151828] text-white px-36 py-20">
+    <div className=" bg-[#151828] text-white px-12 sm:px-16 md:px-24 xl:px-36 py-20">
       <div className="grid grid-cols-6 gap-20">
-        <div className="col-span-2">
+        <div className="lg:col-span-2 col-span-6">
           <div className="logo text-3xl text-[#EB8F1E] font-semibold uppercase mb-5">
             Game Showcase
           </div>
-          <p className="font-light text-xs leading-loose mb-8">
+          <p className="font-light text-sm leading-loose mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             tempus finibus nulla a tempus. Proin laoreet ut tellus a finibus.
             Cras tempor nulla vel dignissim posuere. Proin bibendum, dolor eu
-            scelerisque pharetra, purus ipsum ultricies lorem, at pretium sapien
-            risus vel augue. Donec massa odio, vestibulum quis sem eu, aliquam
-            vestibulum lorem.
+            scelerisque pharetra, purus ipsum ultricies.
           </p>
-          <img src={payment} />
+          <img className="w-full" src={payment} />
         </div>
-        <div className="justify-self-center">
+        <div className="lg:col-span-1 md:col-span-2 col-span-3 lg:justify-self-center">
           <h4 className="mb-3">Our Games</h4>
           <ul className="flex flex-col gap-2 text-[#D6D9D3]">
             <li className="text-sm font-light">Dice</li>
@@ -38,7 +36,7 @@ const Footer = () => {
             <li className="text-sm font-light">Gready 2</li>
           </ul>
         </div>
-        <div className="justify-self-center">
+        <div className="lg:col-span-1 md:col-span-2 col-span-3 lg:justify-self-center">
           <h4 className="mb-3">Pages</h4>
           <ul className="flex flex-col gap-2 text-[#D6D9D3]">
             <li className="text-sm font-light">Home</li>
@@ -49,7 +47,7 @@ const Footer = () => {
             <li className="text-sm font-light">FAQ</li>
           </ul>
         </div>
-        <div className="col-span-2 grid grid-rows-2">
+        <div className="md:col-span-2 col-span-6 grid grid-rows-2">
           <div>
             <h4 className="mb-3">Newsletter</h4>
             <form>

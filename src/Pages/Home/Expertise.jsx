@@ -8,9 +8,9 @@ import innovation from "../../assets/Experties/continuous-innovation.png";
 
 const Expertise = () => {
   return (
-    <div className="relative min-h-[100vh] bg-[#151828] px-36 py-20 grid grid-cols-2 items-center gap-20 text-white ">
-      <div className="absolute top-0 left-0 w-0 h-0 border-r-[99vw] border-r-transparent border-b-[5vw] border-b-[#151828] -mt-[5vw]"></div>
-      <div className="absolute z-20 bottom-0 right-0 translate-y-full w-0 h-0 border-l-[99vw] border-l-transparent border-t-[5vw] border-t-[#151828] mt-[5vw]"></div>
+    <div className="relative min-h-[100vh] bg-[#151828] px-16 sm:px-24 xl:px-36 py-20 grid xl:grid-cols-2 items-center gap-20 text-white ">
+      <div className="absolute top-1 left-0 w-0 h-0 border-r-[99vw] border-r-transparent border-b-[5vw] border-b-[#151828] -mt-[5vw]"></div>
+      <div className="absolute z-20 bottom-1 right-0 translate-y-full w-0 h-0 border-l-[99vw] border-l-transparent border-t-[5vw] border-t-[#151828] mt-[5vw]"></div>
       <div>
         <div className="title mb-8">
           <h2 className="permanent-marker-regular text-6xl mb-3">
@@ -27,7 +27,7 @@ const Expertise = () => {
           game development in these genres.
         </p>
         <div className="experties mt-8">
-          <ul className="grid grid-cols-2 gap-10">
+          <ul className="grid md:grid-cols-2 gap-10">
             <li className="flex gap-5 items-start">
               <div className="bg-white/10 backdrop-blur-xl shadow-md p-3 rounded-lg">
                 <img className="min-w-8" src={expertise} alt="" />

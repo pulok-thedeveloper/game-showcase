@@ -15,6 +15,12 @@
 }
 
 nav .active {
+  border-bottom: solid 2px #eb8f1e;
+  color: #eb8f1e;
+}
+
+.navbar.scrolled{
+  
 }
 
 .scroller[data-animated="true"] {
@@ -82,4 +88,38 @@ nav .active {
 
 .faqItem .details.active {
   max-height: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 90%;
+  }
+}
+ @media only screen and (max-width: 1365px) {
+  html {
+    font-size: 85%;
+  }
+}
+ @media only screen and (max-width: 1280px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
 }
