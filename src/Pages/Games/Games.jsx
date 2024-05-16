@@ -5,25 +5,67 @@ import game3 from "../../assets/Roulate/1.png";
 import game4 from "../../assets/Golder_Flower/1.png";
 import game5 from "../../assets/Gready/1.png";
 import game6 from "../../assets/Gready_2/2.png";
+import { LiaFilterSolid } from "react-icons/lia";
+import { GoSearch } from "react-icons/go";
+import { useState } from "react";
 
 const Games = () => {
+  const [filterBox, setFilterBox] = useState(false);
   return (
     <div
       className="min-h-screen bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="w-full min-h-screen pt-44 px-12 md:px-20 lg:px-24 xl:px-40 bg-black/60 backdrop-blur-[3px]">
-        <div className="title mb-12">
+      <div className="w-full min-h-screen pt-44 pb-20 px-12 md:px-20 lg:px-24 xl:px-40 bg-black/60 backdrop-blur-[3px]">
+        <div className="mb-8 flex justify-between relative py-5">
           <h2 className=" text-4xl text-white uppercase font-semibold italic">
             <span>Game </span>{" "}
             <span className="text-[#EB8F1E]">Collection</span>
           </h2>
+          <div className="flex items-center gap-5">
+            <div>
+              <button className="flex items-center gap-2 bg-white/20 backdrop-blur-xl text-white p-3 rounded-md">
+                <GoSearch className="text-lg" />
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={() => setFilterBox(!filterBox)}
+                className="flex items-center gap-2 bg-white/20 backdrop-blur-xl text-white px-5 py-2 rounded-md"
+              >
+                <LiaFilterSolid />
+                Filter
+              </button>
+              <div
+                className={`absolute w-[300px] z-10 right-0 top-full bg-white/40 backdrop-blur-3xl p-5 rounded-md ${
+                  filterBox ? "scale-100" : "scale-0"
+                }  origin-top-right transition-transform duration-300`}
+              >
+                <form className="flex flex-col gap-5">
+                  <div className="flex flex-col gap-2">
+                    <label>Category</label>
+                    <select className="bg-white/50 outline-0 w-full px-3 py-2 rounded-md">
+                      <option>Category 1</option>
+                      <option>Category 2</option>
+                      <option>Category 3</option>
+                      <option>Category 4</option>
+                    </select>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label>Released date</label>
+                    <input
+                      className="bg-white/50 outline-0 w-full px-3 py-2 rounded-md"
+                      type="date"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="cards grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 sm:gap-10 gap-5">
-          <div
-            className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300"
-          >
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game1}
@@ -45,7 +87,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game2}
@@ -67,7 +109,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game3}
@@ -89,7 +131,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game4}
@@ -111,7 +153,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game5}
@@ -133,7 +175,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="item relative w-full overflow-hidden h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
+          <div className="item relative w-full overflow-hidden h-[280px] sm:h-[370px] rounded-2xl shadow-md group cursor-pointer border-4 border-transparent hover:border-white/80 transition-all duration-300">
             <img
               className="w-full h-full object-cover object-top rounded-2xl transition-all duration-300 group-hover:scale-110"
               src={game6}
