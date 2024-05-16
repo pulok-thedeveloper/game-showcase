@@ -6,6 +6,7 @@ import game4 from "../../assets/Golder_Flower/1.png";
 import game5 from "../../assets/Gready/1.png";
 import game6 from "../../assets/Gready_2/2.png";
 import game1Logo from "../../assets/game_logo/logo1.webp";
+import { Link } from "react-router-dom";
 
 const FeaturedGames = () => {
   return (
@@ -29,7 +30,7 @@ const FeaturedGames = () => {
           titles.
         </p>
 
-        <div className="cards mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 sm:gap-10 gap-5">
+        <div className="cards my-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 sm:gap-10 gap-5">
           <div className="flip-card relative cursor-pointer">
             <div className="flip-card-front p-4 rounded-xl bg-white/10 backdrop-blur-xl shadow-md">
               <img className="h-full w-full rounded-xl" alt="" src={game1} />
@@ -186,6 +187,14 @@ const FeaturedGames = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <Link
+            to="/games"
+            className="hidden md:block bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100"
+          >
+            View all games
+          </Link>
         </div>
       </section>
     </div>
