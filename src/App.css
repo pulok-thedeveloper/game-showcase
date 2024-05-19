@@ -19,10 +19,6 @@ nav .active {
   color: #eb8f1e;
 }
 
-.navbar.scrolled{
-  
-}
-
 .scroller[data-animated="true"] {
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   -webkit-mask: linear-gradient(
@@ -90,21 +86,38 @@ nav .active {
   max-height: auto;
 }
 
+.circle-animate .text p span {
+  position: absolute;
+  left: 50%;
+  font-size: 10px;
+  font-weight: 300;
+  transform-origin: 0 4rem;
+}
 
+.circle-animate .text {
+  animation: rotateText 10s linear infinite;
+}
 
-
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 @media only screen and (max-width: 1440px) {
   html {
     font-size: 90%;
   }
 }
- @media only screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   html {
     font-size: 85%;
   }
 }
- @media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   html {
     font-size: 80%;
   }

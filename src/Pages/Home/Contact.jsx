@@ -8,7 +8,6 @@ const Contact = () => {
       className="min-h-[100vh] relative px-16 sm:px-24 xl:px-36 py-40"
       style={{
         background: "radial-gradient(#A05D86, 30%, #10092C)",
-        // background: "radial-gradient(#27174F, 30%, #10092C)",
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full z-10 bg-white/10 backdrop-blur-2xl"></div>

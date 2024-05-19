@@ -1,9 +1,7 @@
-import vid1 from "../../../assets/Teen_Patti/3.mov";
-import img1 from "../../../assets/Teen_Patti/1.png";
-import img2 from "../../../assets/Teen_Patti/2.png";
+/* eslint-disable react/prop-types */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-const Demos = () => {
+const Demos = ({game}) => {
 
   return (
     <div className="max-h-[80vh]">
@@ -34,22 +32,25 @@ const Demos = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <video
-            className="h-[70vh]"
-            src={vid1}
-            autoPlay={true}
-            controls
-            loop
-            onLoadedData={(e) => e.target.play()}
-          ></video>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className="h-[70vh]" src={img1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className="h-[70vh]" src={img2} />
-        </SwiperSlide>
+        {game?.videos?.map((video, i) => (
+          <SwiperSlide key={i}>
+            <video
+              className="h-[70vh]"
+              src={video}
+              autoPlay={true}
+              controls={false}
+              loop
+              muted
+              onLoadedData={(e) => e.target.play()}
+            ></video>
+          </SwiperSlide>
+        ))}
+
+        {game?.images?.map((image, i) => (
+          <SwiperSlide key={i}>
+            <img className="h-[70vh]" src={image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

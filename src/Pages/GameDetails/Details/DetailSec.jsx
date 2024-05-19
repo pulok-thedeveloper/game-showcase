@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Demos from "./Demos";
 import Details from "./Details";
@@ -7,23 +8,23 @@ import { FiDownload } from "react-icons/fi";
 // import banner from "../../../assets/banner/banner/1.png";
 import SimilarGames from "./SimilarGames";
 
-const DetailSec = () => {
+const DetailSec = ({game}) => {
   const [activeTab, setActiveTab] = useState(1);
   const tabs = [
     {
       id: 1,
       title: "Demos",
-      element: <Demos />,
+      element: <Demos game={game}/>,
     },
     {
       id: 2,
       title: "Details",
-      element: <Details />,
+      element: <Details game={game}/>,
     },
     {
       id: 3,
       title: "Features",
-      element: <Features />,
+      element: <Features game={game}/>,
     },
   ];
   return (
@@ -33,23 +34,23 @@ const DetailSec = () => {
       <div className="grid grid-cols-2 sm:grid-cols-4 mb-20 sm:divide-x gap-y-10 text-2xl">
         <div className="flex flex-col items-center gap-2">
           <p className="flex items-center gap-2">
-            <span>4.6</span>
+            <span>{game?.reviews?.rating}</span>
             <FaStar />
           </p>
-          <p>1M reviews</p>
+          <p>{game?.reviews?.count} reviews</p>
         </div>
         <div className="flex flex-col items-center gap-2">
           <FiDownload className="text-4xl" />
-          <p>66 MB</p>
+          <p>{game?.download_size} MB</p>
         </div>
         <div className="flex flex-col items-center gap-2">
           <p className="text-3xl bg-white text-[#110C1D] p-2 rounded leading-none">
-            18+
+            {game?.age_rated}+
           </p>
-          <p>Rated for 18+</p>
+          <p>Rated for {game?.age_rated}+</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <p>100M+</p>
+          <p>{game?.downloads}M+</p>
           <p>Downloads</p>
         </div>
       </div>
