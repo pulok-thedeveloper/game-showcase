@@ -5,7 +5,6 @@ import Details from "./Details";
 import Features from "./Features";
 import { FaStar } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
-// import banner from "../../../assets/banner/banner/1.png";
 import SimilarGames from "./SimilarGames";
 
 const DetailSec = ({game}) => {
@@ -50,7 +49,7 @@ const DetailSec = ({game}) => {
           <p>Rated for {game?.age_rated}+</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <p>{game?.downloads}M+</p>
+          <p>{game?.downloads}+</p>
           <p>Downloads</p>
         </div>
       </div>

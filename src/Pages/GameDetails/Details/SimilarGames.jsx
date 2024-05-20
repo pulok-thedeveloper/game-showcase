@@ -1,9 +1,9 @@
-import game1 from "../../../assets/Dice/1.png";
-import game2 from "../../../assets/Teen_Patti/1.png";
-import game3 from "../../../assets/Roulate/1.png";
-import game4 from "../../../assets/Golder_Flower/1.png";
-import game5 from "../../../assets/Gready/1.png";
-import game6 from "../../../assets/Gready_2/2.png";
+import game1 from "/assets/Dice/1.png";
+import game2 from "/assets/Teen_Patti/1.png";
+import game3 from "/assets/Roulate/1.png";
+import game4 from "/assets/Golder_Flower/1.png";
+import game5 from "/assets/Gready/1.png";
+import game6 from "/assets/Gready_2/2.png";
 
 const SimilarGames = () => {
   return (

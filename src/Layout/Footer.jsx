@@ -6,7 +6,7 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
-import payment from "../assets/payment.png";
+import payment from "/assets/payment.png";
 
 const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import bg from "../../assets/game_bg_2.jpg";
+import bg from "/assets/game_bg_2.jpg";
 import { LiaFilterSolid } from "react-icons/lia";
 import { GoSearch } from "react-icons/go";
 import { useEffect, useState } from "react";

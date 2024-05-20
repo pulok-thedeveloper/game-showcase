@@ -1,4 +1,4 @@
-import Herobg from "../../assets/hero_bg2.jpg";
+import Herobg from "/assets/hero_bg2.jpg";
 const Hero = () => {
   return (
     <header className="h-[100vh] relative">

@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import member1 from "../../assets/team/CEO.jpg"
-import member2 from "../../assets/team/cfo.jpg"
-import member3 from "../../assets/team/founder.jpg"
-import member4 from "../../assets/team/Manager (2).jpg"
+import member1 from "/assets/team/CEO.jpg"
+import member2 from "/assets/team/cfo.jpg"
+import member3 from "/assets/team/founder.jpg"
+import member4 from "/assets/team/Manager (2).jpg"
 
 const TeamMembers = () => {
     return (

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import google_play_btn from "../../assets/google_play_btn.png";
-import app_store_btn from "../../assets/app_store_btn.png";
+import google_play_btn from "/assets/google_play_btn.png";
+import app_store_btn from "/assets/app_store_btn.png";
 
 // Import Swiper styles
 import "swiper/css";

@@ -1,4 +1,4 @@
-import bg from "../../assets/achievement_bg.jpg";
+import bg from "/assets/achievement_bg.jpg";
 
 const Achievement = () => {
   return (

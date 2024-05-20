@@ -1,10 +1,10 @@
-import teamImg from "../../assets/expert_team.jpg";
-import expertise from "../../assets/Experties/experties.png";
-import design from "../../assets/Experties/innovative_design.png";
-import succcess from "../../assets/Experties/succcess.png";
-import technology from "../../assets/Experties/technology.png";
-import community from "../../assets/Experties/community.png";
-import innovation from "../../assets/Experties/continuous-innovation.png";
+import teamImg from "/assets/expert_team.jpg";
+import expertise from "/assets/Experties/experties.png";
+import design from "/assets/Experties/innovative_design.png";
+import succcess from "/assets/Experties/succcess.png";
+import technology from "/assets/Experties/technology.png";
+import community from "/assets/Experties/community.png";
+import innovation from "/assets/Experties/continuous-innovation.png";
 
 const Expertise = () => {
   return (

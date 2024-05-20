@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import logo1 from "../../assets/game_logo/logo1.webp";
-import logo2 from "../../assets/game_logo/logo2.webp";
-import logo3 from "../../assets/game_logo/logo3.webp";
-import logo4 from "../../assets/game_logo/logo4.webp";
-import logo5 from "../../assets/game_logo/logo5.webp";
-import logo6 from "../../assets/game_logo/logo6.webp";
-import logo7 from "../../assets/game_logo/logo7.webp";
-import logo8 from "../../assets/game_logo/logo8.jpeg";
-import logo9 from "../../assets/game_logo/logo9.jpeg";
+import logo1 from "/assets/game_logo/logo1.webp";
+import logo2 from "/assets/game_logo/logo2.webp";
+import logo3 from "/assets/game_logo/logo3.webp";
+import logo4 from "/assets/game_logo/logo4.webp";
+import logo5 from "/assets/game_logo/logo5.webp";
+import logo6 from "/assets/game_logo/logo6.webp";
+import logo7 from "/assets/game_logo/logo7.webp";
+import logo8 from "/assets/game_logo/logo8.jpeg";
+import logo9 from "/assets/game_logo/logo9.jpeg";
 
 const GameLogo = () => {
   const addAnimation = () => {

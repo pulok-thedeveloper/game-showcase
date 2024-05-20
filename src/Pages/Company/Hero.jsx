@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import vid1 from "../../assets/company_hero.mp4";
+import vid1 from "/assets/company_hero.mp4";
 import { FaPlay } from "react-icons/fa6";
 
 const Hero = () => {
