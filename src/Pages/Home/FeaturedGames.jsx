@@ -20,7 +20,7 @@ const FeaturedGames = () => {
           "linear-gradient(250.59deg, #322c38 0%, #514e61 28.53%, #1c2137 75.52%)",
       }}
     >
-      <GameLogo></GameLogo>
+      <GameLogo games={games}></GameLogo>
 
       <section className="featured-games relative text-white">
         <div className="title mt-20 mb-8 text-center permanent-marker-regular text-6xl">
