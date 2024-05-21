@@ -1,9 +1,9 @@
 import {
   FaFacebookF,
   FaTwitter,
-  FaDiscord,
-  FaYoutube,
+  FaTelegramPlane,
   FaPaperPlane,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import payment from "/assets/payment.png";
@@ -80,10 +80,10 @@ const Footer = () => {
                   <PiInstagramLogoFill className="text-lg" />
                 </li>
                 <li className="bg-white/10 backdrop-blur-xl rounded-md p-2 cursor-pointer hover:bg-[#EB8F1E] hover:text-white transition-all duration-300">
-                  <FaDiscord className="text-lg" />
+                  <FaWhatsapp className="text-lg" />
                 </li>
                 <li className="bg-white/10 backdrop-blur-xl rounded-md p-2 cursor-pointer hover:bg-[#EB8F1E] hover:text-white transition-all duration-300">
-                  <FaYoutube className="text-lg" />
+                  <FaTelegramPlane className="text-lg" />
                 </li>
               </ul>
             </div>
