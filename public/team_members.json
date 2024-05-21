@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "designation": "Lead Game Designer",
+    "image": "/assets/team/alex.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Emily Rodriguez",
+    "designation": "Art Director",
+    "image": "/assets/team/emily.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Carter",
+    "designation": "CEO",
+    "image": "/assets/team/michael.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sarah Taylor",
+    "designation": "Software Engineer",
+    "image": "/assets/team/sarah.jpg"
+  }
+]

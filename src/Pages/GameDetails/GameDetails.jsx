@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 const GameDetails = () => {
     const [game, setGame] = useState();
     const { slug } = useParams();
-    console.log(game);
 
     useEffect(() => {
       fetch("/games.json")

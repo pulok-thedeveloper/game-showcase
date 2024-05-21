@@ -98,6 +98,25 @@ nav .active {
   animation: rotateText 10s linear infinite;
 }
 
+.swiper-pagination-bullet{
+  background-color: rgb(255 255 255) !important;
+  --tw-backdrop-blur: blur(24px);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #EB8F1E !important;
+}
+
+.swiper{
+  height: fit-content;
+  padding-bottom: 3rem !important;
+}
+
+.styles-module_floatingWhatsapp__yWF5K {
+    height: auto !important;
+}
+
 @keyframes rotateText {
   0% {
     transform: rotate(360deg);

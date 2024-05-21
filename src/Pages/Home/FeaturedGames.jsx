@@ -34,7 +34,7 @@ const FeaturedGames = () => {
         </p>
         {/* grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 */}
         {/* 2xl:grid-cols-6 sm:gap-10 gap-5 */}
-        <div className="cards my-16 ">
+        <div className="cards mt-16 mb-10 ">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
