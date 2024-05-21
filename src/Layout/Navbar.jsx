@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 
@@ -26,9 +26,9 @@ const Navbar = () => {
     <div className="navbar transition-all fixed top-4 z-50 px-10 sm:px-16 xl:px-24 w-full">
       <div className="innerNav bg-white/10 backdrop-blur-xl px-8 rounded-xl h-20 flex justify-between items-center">
         <div className="logo flex items-center h-full">
-          <p className="text-[#EB8F1E] text-2xl josefin-sans font-semibold uppercase">
+          <Link to='/' className="text-[#EB8F1E] text-2xl josefin-sans font-semibold uppercase">
             Game Showcase
-          </p>
+          </Link>
         </div>
 
         <nav>
@@ -65,9 +65,9 @@ const Navbar = () => {
           </span>
         </div>
 
-        <button className="hidden md:block bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
+        <Link to='/contact' className="hidden md:block bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
           Let&apos;s Talk
-        </button>
+        </Link>
       </div>
       <nav
         className={`fixed top-0  h-screen w-full transition-all z-50 duration-500 bg-white/5 backdrop-blur-md ${
@@ -112,9 +112,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <button className="bg-[#EB8F1E] text-white px-8 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
+            <Link to="/contact" className="bg-[#EB8F1E] text-white px-8 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
               Let&apos;s Talk
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>

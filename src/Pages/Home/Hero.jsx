@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Herobg from "/assets/hero_bg2.jpg";
 const Hero = () => {
   return (
@@ -27,9 +28,9 @@ const Hero = () => {
             art services.
           </p>
           <div className="flex justify-center md:block">
-            <button className="bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
+            <Link to="/company" className="bg-[#EB8F1E] text-white px-5 py-2 rounded-md shadow-[3px_5px_3px_#BC6F10] active:shadow-none active:translate-y-[5px] transition-all duration-100">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="right flex flex-grow justify-end">
